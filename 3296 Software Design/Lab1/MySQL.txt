@@ -1,3 +1,0 @@
-User =	tul46491
-Password = ainumoob
-DB =	FA20_3296_tul46491

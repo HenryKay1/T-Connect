@@ -1,4 +1,0 @@
-        SERVER:   cis-linux2.temple.edu
-	USER:     tul46491
-	PASSWORD: ainumoob
-	DATABASE: FA20_3296_tul46491
