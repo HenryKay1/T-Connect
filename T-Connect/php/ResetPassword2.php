@@ -25,7 +25,7 @@
    //Login Data Items
    $Acode = rand();
    $Rdatetime = date("Y-m-d h:i:s");
-   $query = "UPDATE FA20_3296_tul46491.Users_AH
+   $query = "UPDATE Users_AH
 			SET Acode = '$Acode', Adatetime = '$Rdatetime'
 			WHERE Email = '$Email';";
    //Prepare email with a hot link
@@ -50,14 +50,14 @@
    		$mail->IsSMTP();
    		$mail->Host="smtp.gmail.com";
    		$mail->SMTPAuth=true;
-   		$mail->Username="markdezlaw@gmail.com";
-   		$mail->Password = "markdezlaw419";
+   		$mail->Username="your_sender_email";
+   		$mail->Password = "your_sender_email's_password";
    		$mail->SMTPSecure = "ssl";
    		$mail->Port=465;
    		$mail->SMTPKeepAlive = true;
    		$mail->Mailer = "smtp";
-   		$mail->setFrom("tul46491@temple.edu", "Henry Kombem");
-   		$mail->addReplyTo("tul46491@temple.edu","Henry Kombem");
+   		$mail->setFrom("sender_reference_email", "preferred_name");   //not the real sender just the sender and name the receiver sees
+   		$mail->addReplyTo("sender_reference_email","preferred_name"); //Same as comment directly above
    		$mail->isHTML(true);
    		$msg = "Please click the "
    				."<a href = 'https://cis-linux2.temple.edu/~tul46491/T-Connect/php/Authenticate.php?Email=$Email&Acode=$Acode'"
