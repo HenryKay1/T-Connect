@@ -1,8 +1,8 @@
 <?php
 
-	define("SERVER", "cis-linux2.temple.edu");
-	define("USER","tul46491");
-	define("PASSWORD","ainumoob");
-	define("DATABASE","FA20_3296_tul46491");
+	define("SERVER", "your_server");
+	define("USER","your_username");
+	define("PASSWORD","your_password");
+	define("DATABASE","your_database_name");
 
 ?>
